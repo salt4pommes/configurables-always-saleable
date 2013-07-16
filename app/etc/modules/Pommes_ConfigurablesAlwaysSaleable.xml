@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Pommes_ConfigurablesAlwaysSaleable>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Catalog/>
+
+            </depends>
+        </Pommes_ConfigurablesAlwaysSaleable>
+    </modules>
+</config>

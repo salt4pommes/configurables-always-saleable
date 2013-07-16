@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Pommes_ConfigurablesAlwaysSaleable>
+            <version>0.1.0</version>
+        </Pommes_ConfigurablesAlwaysSaleable>
+    </modules>
+    <global>
+        <models>
+            <pommes_configurablesalwayssaleable>
+                <class>Pommes_ConfigurablesAlwaysSaleable_Model</class>
+            </pommes_configurablesalwayssaleable>
+        </models>
+        <blocks>
+            <catalog>
+                <rewrite>
+                    <product_view_type_configurable>Pommes_ConfigurablesAlwaysSaleable_Block_Catalog_Product_View_Type_Configurable</product_view_type_configurable>
+                </rewrite>
+            </catalog>
+        </blocks>
+    </global>
+    <frontend>
+        <events>
+            <catalog_product_is_salable_after>
+                <observers>
+                    <configurablesalwayssaleable>
+                        <type>model</type>
+                        <class>pommes_configurablesalwayssaleable/observer</class>
+                        <method>catalogProductIsSalableAfter</method>
+                    </configurablesalwayssaleable>
+                </observers>
+            </catalog_product_is_salable_after>
+        </events>
+    </frontend>
+</config>
