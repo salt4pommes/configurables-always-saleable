@@ -4,7 +4,7 @@
  *
  * Rewrites getAllowProducts to also include non salable products in configurable product list
  */
-/
+
 class Pommes_ConfigurablesAlwaysSaleable_Block_Catalog_Product_View_Type_Configurable extends Mage_Catalog_Block_Product_View_Type_Configurable {
 
     public function getAllowProducts()
